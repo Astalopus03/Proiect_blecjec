@@ -1,0 +1,99 @@
+/* Blackjack.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.png'); /* Poți adăuga un fundal personalizat */
+    background-size: cover;
+    background-position: center;
+}
+
+.game-container {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.game-title {
+    font-size: 3em;
+    color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #5fa6e0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+}
+
+.start-button:hover {
+    background-color: #4a90e2;
+}
+
+.hand {
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.card-image {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #5fa6e0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #4a90e2;
+}
+
+.action-btn:active {
+    background-color: #336f97;
+}
+
+.result {
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: #5fa6e0;
+}
